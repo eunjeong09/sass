@@ -4,4 +4,13 @@ body {
   background: blue;
   color: #fff;
 }
+
+h1 {
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.topBar {
+  position: fixed;
+}
 /*# sourceMappingURL=style.css.map */
