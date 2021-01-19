@@ -1,16 +1,39 @@
-body {
-  font: 100% Helvetica, sans-serif;
-  color: #333;
-  background: blue;
-  color: #fff;
+.wrap {
+  padding-top: 20px;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+header ul {
+  display: inline-block;
+  float: right;
+}
+
+section {
+  text-align: center;
 }
 
 h1 {
   font-weight: bold;
   font-size: 36px;
+  display: inline-block;
 }
 
 .topBar {
   position: fixed;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  float: left;
 }
 /*# sourceMappingURL=style.css.map */
