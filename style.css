@@ -1,5 +1,6 @@
 .wrap {
   padding-top: 20px;
+  color: #333;
 }
 
 header {
@@ -7,6 +8,7 @@ header {
   top: 0px;
   left: 0px;
   width: 100%;
+  padding: 1rem 2rem;
 }
 
 header ul {
@@ -16,6 +18,7 @@ header ul {
 
 section {
   text-align: center;
+  height: 600px;
 }
 
 h1 {
@@ -24,8 +27,8 @@ h1 {
   display: inline-block;
 }
 
-.topBar {
-  position: fixed;
+h2 {
+  font-size: 70px;
 }
 
 ul {
@@ -35,5 +38,44 @@ ul {
 li {
   display: inline-block;
   float: left;
+}
+
+.leftArea {
+  width: "50%";
+  float: left;
+}
+
+.rightArea {
+  width: "50%";
+  float: right;
+}
+
+#section01 {
+  background-image: url("./image/menu0.jpg");
+}
+
+#section02 {
+  background-color: #d3ead5;
+}
+
+#section02 li > div {
+  width: 400px;
+  height: 500px;
+}
+
+#section02 li > div .topImg {
+  height: 250px;
+}
+
+#section02 li > div .bottomTxt {
+  background: #fff;
+  height: 250px;
+  line-height: 250px;
+}
+
+#section02 li:first-child .topImg {
+  background-image: url("./image/menu1.jpg");
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=style.css.map */

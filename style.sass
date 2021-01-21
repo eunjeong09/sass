@@ -1,37 +1,64 @@
 $font-stack:    Helvetica, sans-serif
 $primary-color: #333
-$border: 1px solid #eee
-$halfWidth : 50%
-$left : left
-$rigth: right
-$center : center
+$border: 1px solid #333
+$halfWidth : '50%'
+
 
 .wrap
   padding-top: 20px
+  color: $primary-color
 header 
   position: fixed
   top: 0px
   left: 0px
   width: 100%
-header ul
-  display: inline-block
-  float: right
+  padding: 1rem 2rem
 
-
+  ul
+    display: inline-block
+    float: right
 section
   text-align: center
+  height: 600px
 h1  
   font-weight: bold
   font-size: 36px
   display: inline-block
-
-.topBar
-  position: fixed
+h2 
+  font-size: 70px
 ul
   list-style: none
 li
   display: inline-block
   float: left
 
+.leftArea
+  width: $halfWidth
+  float: left
+.rightArea
+  width: $halfWidth
+  float: right
+
+
+#section01
+  background-image: url('./image/menu0.jpg')
+#section02
+  background-color: #d3ead5
+  li > div
+    width: 400px
+    height: 500px
+
+    .topImg
+      height: 250px
+    .bottomTxt
+      background: #fff
+      height: 250px
+      line-height: 250px
+      
+    
+  li:first-child
+    .topImg
+      background-image: url('./image/menu1.jpg')
+      object-fit: cover
 
 
