@@ -1,5 +1,4 @@
 .wrap {
-  padding-top: 20px;
   color: #333;
 }
 
@@ -31,6 +30,13 @@ h2 {
   font-size: 70px;
 }
 
+h3 {
+  font-size: 30px;
+  margin: 0;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+}
+
 ul {
   list-style: none;
 }
@@ -41,21 +47,32 @@ li {
 }
 
 .leftArea {
-  width: "50%";
+  width: 50%;
   float: left;
 }
 
 .rightArea {
-  width: "50%";
+  width: 50%;
   float: right;
 }
 
 #section01 {
   background-image: url("./image/menu0.jpg");
+  background-size: inherit;
 }
 
 #section02 {
-  background-color: #d3ead5;
+  height: 700px;
+  background-color: #bed8c8;
+}
+
+#section02 > div {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#section02 li {
+  margin-right: 1.5rem;
 }
 
 #section02 li > div {
@@ -70,12 +87,52 @@ li {
 #section02 li > div .bottomTxt {
   background: #fff;
   height: 250px;
-  line-height: 250px;
 }
 
 #section02 li:first-child .topImg {
+  background-image: url("./image/menu4.jpg");
+  background-size: contain;
+}
+
+#section02 li:nth-child(2) .topImg {
+  background-image: url("./image/menu5.jpg");
+}
+
+#section02 li:nth-child(3) .topImg {
+  background-image: url("./image/menu2.jpg");
+}
+
+#section03 {
+  height: 500px;
+}
+
+#section03 .leftArea {
   background-image: url("./image/menu1.jpg");
-  -o-object-fit: cover;
-     object-fit: cover;
+  background-size: contain;
+  height: 500px;
+}
+
+#section04 {
+  height: 300px;
+  background-color: #97afa0;
+}
+
+#section04 input {
+  background-color: #bed8c8;
+  height: 30px;
+  display: block;
+  margin: 0 auto;
+  width: 30%;
+  margin-bottom: 1rem;
+  border: 2px solid #ffffff;
+  padding: 10px;
+}
+
+#section04 button {
+  border: 2px solid #333;
+  width: 180px;
+  height: 40px;
+  letter-spacing: 10px;
+  background: transparent;
 }
 /*# sourceMappingURL=style.css.map */

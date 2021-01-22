@@ -1,11 +1,10 @@
 $font-stack:    Helvetica, sans-serif
 $primary-color: #333
-$border: 1px solid #333
-$halfWidth : '50%'
+$border: 2px solid #333
+$halfWidth : 50%
 
 
 .wrap
-  padding-top: 20px
   color: $primary-color
 header 
   position: fixed
@@ -26,6 +25,11 @@ h1
   display: inline-block
 h2 
   font-size: 70px
+h3
+  font-size: 30px
+  margin: 0
+  padding-top: 2rem
+  padding-bottom: 1.5rem
 ul
   list-style: none
 li
@@ -42,8 +46,15 @@ li
 
 #section01
   background-image: url('./image/menu0.jpg')
+  background-size: inherit
 #section02
-  background-color: #d3ead5
+  height: 700px
+  background-color: #bed8c8
+  >div 
+    width: 80%
+    margin: 0 auto
+  li
+    margin-right: 1.5rem
   li > div
     width: 400px
     height: 500px
@@ -53,12 +64,45 @@ li
     .bottomTxt
       background: #fff
       height: 250px
-      line-height: 250px
+      // line-height: 250px
       
     
   li:first-child
     .topImg
-      background-image: url('./image/menu1.jpg')
-      object-fit: cover
+      background-image: url('./image/menu4.jpg')
+      background-size: contain
 
+  li:nth-child(2)
+    .topImg
+      background-image: url('./image/menu5.jpg')
+  li:nth-child(3)
+    .topImg
+      background-image: url('./image/menu2.jpg')
 
+#section03
+  height: 500px
+  .leftArea
+    background-image: url('./image/menu1.jpg')
+    background-size: contain
+    // background-repeat: no-repeat
+    height: 500px
+
+#section04
+  height: 300px
+  background-color: #97afa0
+
+  input
+    background-color: #bed8c8
+    height: 30px
+    display: block
+    margin: 0 auto
+    width: 30%
+    margin-bottom: 1rem
+    border: 2px solid #ffffff
+    padding: 10px
+  button
+    border: $border
+    width: 180px
+    height: 40px
+    letter-spacing: 10px
+    background: transparent
