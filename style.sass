@@ -1,5 +1,6 @@
-$font-stack:    Helvetica, sans-serif
+$font-stack: Helvetica, sans-serif
 $primary-color: #333
+$sub-color: #474545
 $border: 2px solid #333
 $halfWidth : 50%
 
@@ -9,13 +10,18 @@ $halfWidth : 50%
 header 
   position: fixed
   top: 0px
-  left: 0px
-  width: 100%
-  padding: 1rem 2rem
+  left: 30px
+  width: 95%
+  line-height: 20px
 
   ul
     display: inline-block
     float: right
+    li
+      margin-left: 1rem
+      padding: 5px
+    li:nth-child(3)
+      border: $border
 section
   text-align: center
   height: 600px
@@ -26,6 +32,7 @@ h1
 h2 
   font-size: 70px
 h3
+  color: $sub-color
   font-size: 30px
   margin: 0
   padding-top: 2rem
@@ -42,14 +49,46 @@ li
 .rightArea
   width: $halfWidth
   float: right
+input:focus
+  outline: none
+
 
 
 #section01
   background-image: url('./image/menu0.jpg')
   background-size: inherit
+  padding: 7rem 0 0 0
+  margin-top: -1.5rem
+
+  h3
+    position: relative
+    padding-top: 0
+    &::after
+      height: 5px
+      width: 40px
+      background-color: #206026
+      content: ''
+      position: absolute
+      bottom: 0
+      left: 50%
+      transform: translateX(-50%)
+  
 #section02
   height: 700px
   background-color: #bed8c8
+  h3
+    padding-bottom: 2.5rem
+    position: relative
+    &::after
+      height: 5px
+      width: 40px
+      background-color: $primary-color
+      content: ''
+      position: absolute
+      bottom: 20px
+      left: 50%
+      transform: translateX(-50%)
+
   >div 
     width: 80%
     margin: 0 auto
@@ -58,15 +97,15 @@ li
   li > div
     width: 400px
     height: 500px
+    box-shadow: 0px 0px 20px #a3a3a3
 
     .topImg
       height: 250px
     .bottomTxt
       background: #fff
       height: 250px
-      // line-height: 250px
-      
-    
+      font-weight: bold
+      line-height: 35px
   li:first-child
     .topImg
       background-image: url('./image/menu4.jpg')
@@ -78,6 +117,21 @@ li
   li:nth-child(3)
     .topImg
       background-image: url('./image/menu2.jpg')
+  
+  .bottomTxt span
+    padding-top: 4rem
+    display: block
+    position: relative
+    &::after
+      height: 5px
+      width: 40px
+      background-color: $sub-color
+      content: ''
+      position: absolute
+      top: 2.5rem
+      left: 50%
+      transform: translateX(-50%)
+    
 
 #section03
   height: 500px
@@ -86,10 +140,30 @@ li
     background-size: contain
     // background-repeat: no-repeat
     height: 500px
+  .rightArea
+    padding: 4rem 0 0 0
+    line-height: 20px
+    letter-spacing: 2px
+    position: relative
+    h3
+      position: relative
+      padding-bottom: 7rem
+      &::after
+        height: 5px
+        width: 40px
+        background-color: $primary-color
+        content: ''
+        position: absolute
+        top: 5rem
+        left: 50%
+        transform: translateX(-50%)
 
 #section04
   height: 300px
   background-color: #97afa0
+
+  h3
+    padding-bottom: 0
 
   input
     background-color: #bed8c8
@@ -100,9 +174,32 @@ li
     margin-bottom: 1rem
     border: 2px solid #ffffff
     padding: 10px
+  
   button
     border: $border
     width: 180px
     height: 40px
     letter-spacing: 10px
     background: transparent
+
+footer
+  height: 60px
+  padding: 3rem 0
+  .icon
+    display: inline-block
+    float: left
+    margin-right: 15px
+    color: #fff
+    background: $sub-color
+    width: 25px
+    height: 25px
+    border-radius: 50%
+    line-height: 30px
+    text-align: center
+  
+  .rightArea
+    text-align: right
+    ul
+      float: right
+      li
+        margin-right: 2rem
