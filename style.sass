@@ -1,4 +1,19 @@
-$font-stack: Helvetica, sans-serif
+// 웹폰트
+$base: 16;
+$serief: 'Tiems New Roman', Serief
+$sans-serief: Verdana, Sans-Serief
+
+$serief-ko: Gulim, Serief
+$sans-serief-ko: 'Nanum Gothic', Dotum, Sans-Serief
+
+$noto-serif: 'Noto-Serief:400,700'
+$noto-sans: 'Noto+Sans:400,700'
+$monoton: 'Monoton'
+
+$webfont: $sans-serief-ko
+@import url('http://fonts.googleapis.com/css?family=#{$webfont}');
+
+// 공통사용
 $primary-color: #333
 $sub-color: #474545
 $border: 2px solid #333
@@ -7,6 +22,7 @@ $halfWidth : 50%
 
 .wrap
   color: $primary-color
+  font-family: $sans-serief-ko
 header 
   position: fixed
   top: 0px
